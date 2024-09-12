@@ -9,7 +9,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <ImageView
             android:id="@+id/redLight"
@@ -32,36 +33,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="invisible"
+            android:visibility="visible"
             app:srcCompat="@drawable/stoplightgreen" />
 
-        <Button
-            android:id="@+id/stop_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:padding="12dp"
-            android:text="@string/stop"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/wait_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:padding="12dp"
-            android:text="@string/wait"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/go_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:padding="12dp"
-            android:text="@string/go"
-            tools:visibility="invisible" />
-
     </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center|bottom"
+        android:backgroundTint="@color/LimeGreen"
+        android:text="Go"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
 </LinearLayout>
